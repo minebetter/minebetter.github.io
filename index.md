@@ -12,9 +12,6 @@ title: Home
 ## About
 Hello! I am a researcher interested in natural language processing, reasoning, and evaluation of large language models.
 
-## Publications
-- Paper A. *Conference*, Year.  
-  [[PDF]]({{ site.baseurl }}/assets/papers/paperA.pdf)
 
 ## Contact
 Email: {{ site.author.email | replace: "@", " [at] " }}
