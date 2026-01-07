@@ -1,20 +1,19 @@
----
-title: Home
----
+# ---- Site basics ----
+title: Song Han
+description: Personal homepage
+url: "https://minebetter.github.io"   # 用户页才需要
+baseurl: ""                              # 用户页必须为空；项目页填 "/repo-name"
 
-# {{ site.author.name }}
+# ---- Author info (供 index.md 使用) ----
+author:
+  name: Song Han
+  email: songhanv25@gmail.com
+  github: mineer
+  interests:
+    - NLP
+    - Reasoning
+    - LLM Evaluation
 
-**Research interests:** {{ site.author.interests | join: ", " }}
-
-- [CV]({{ site.baseurl }}/assets/cv.pdf)
-- [GitHub](https://github.com/{{ site.author.github }})
-
-## About
-Hello! I am a researcher interested in natural language processing, reasoning, and evaluation of large language models.
-
-## Publications
-- Paper A. *Conference*, Year.  
-  [[PDF]]({{ site.baseurl }}/assets/papers/paperA.pdf)
-
-## Contact
-Email: {{ site.author.email | replace: "@", " [at] " }}
+# ---- Markdown & theme ----
+markdown: kramdown
+theme: minima
