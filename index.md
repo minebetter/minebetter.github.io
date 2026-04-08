@@ -10,7 +10,7 @@ Ph.D. student in the Department of Computer Science and Engineering at The Chine
 
 - [Email](mailto:{{ site.author.email }})
 - [GitHub](https://github.com/{{ site.author.github }})
-- [CV]({{ site.baseurl }}/asserts/cv.pdf)
+<!-- - [CV]({{ site.baseurl }}/asserts/cv.pdf) -->
 
 ## About
 I am a Ph.D. student at The Chinese University of Hong Kong, working on natural language processing, reasoning, and the evaluation of large language models. I am broadly interested in building reliable and effective AI systems, with recent work spanning multimodal generation, chain-of-thought analysis, and reasoning benchmarks.
@@ -24,7 +24,7 @@ Ph.D. in Computer Science and Engineering, Sep 2025 - Present
 **Tsinghua University**, Beijing, China  
 B.Eng. in Electronic Information Science and Technology, Sep 2020 - Jun 2025
 
-- GPA: 3.9/4.0 (top 10%)
+- GPA: 3.9/4.0 
 
 ## Honors and Awards
 - Outstanding Graduate, Tsinghua University (Jun 2025)
