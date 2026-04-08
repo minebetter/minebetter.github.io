@@ -7,12 +7,13 @@ baseurl: ""                              # 用户页必须为空；项目页填 
 # ---- Author info (供 index.md 使用) ----
 author:
   name: Song Han
-  email: songhanv25@gmail.com
-  github: mineer
+  email: hansong@link.cuhk.edu.hk
+  github: minebetter
   interests:
     - NLP
     - Reasoning
     - LLM Evaluation
+    - Multimodal Generation
 
 # ---- Markdown & theme ----
 markdown: kramdown
