@@ -28,6 +28,7 @@ B.Eng. in Electronic Information Science and Technology, Sep 2020 - Jun 2025
 
 ## Honors and Awards
 - Outstanding Graduate, Tsinghua University (Jun 2025)
+- Comprehensive Excellence Award, Academic Excellence Award, and Science and Technology Innovation Award (2021-2024)
 
 ## Selected Work
 **From Broad Exploration to Stable Synthesis: Entropy-Guided Optimization for Autoregressive Image Generation**  
