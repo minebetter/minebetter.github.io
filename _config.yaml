@@ -1,19 +1,28 @@
 # ---- Site basics ----
 title: Song Han
 description: Personal homepage
-url: "https://minebetter.github.io"   # 用户页才需要
-baseurl: ""                              # 用户页必须为空；项目页填 "/repo-name"
+url: "https://minebetter.github.io"
+baseurl: "/songhan"                    # 项目页地址: https://minebetter.github.io/songhan/
+header_pages: []                         # 不在顶部导航重复显示首页
 
 # ---- Author info (供 index.md 使用) ----
 author:
   name: Song Han
+  role: Ph.D. Student
+  department: Department of Computer Science and Engineering
+  institution: The Chinese University of Hong Kong
+  location: Hong Kong SAR
   email: hansong@link.cuhk.edu.hk
   github: minebetter
+  cv: /asserts/cv.pdf
   interests:
     - NLP
     - Reasoning
     - LLM Evaluation
     - Multimodal Generation
+  bio: >
+    I study natural language processing, reasoning, and the evaluation of large language models,
+    with a recent focus on multimodal generation and reliable AI systems.
 
 # ---- Markdown & theme ----
 markdown: kramdown

@@ -1,47 +1,98 @@
 ---
-title: Song Han
+layout: default
+permalink: /
 ---
 
-# {{ site.author.name }}
+<div class="home">
+  <section class="hero">
+    <p class="hero-kicker">{{ site.author.role }} · {{ site.author.department }}</p>
+    <h1>{{ site.author.name }}</h1>
+    <p class="hero-lead">{{ site.author.bio }}</p>
 
-Ph.D. student in the Department of Computer Science and Engineering at The Chinese University of Hong Kong.
+    <div class="hero-meta">
+      {% for interest in site.author.interests %}
+      <span class="chip">{{ interest }}</span>
+      {% endfor %}
+    </div>
 
-**Research interests:** {{ site.author.interests | join: ", " }}
+    <div class="hero-links">
+      <a class="button-link" href="mailto:{{ site.author.email }}">Email</a>
+      <a class="button-link secondary" href="https://github.com/{{ site.author.github }}">GitHub</a>
+      <a class="button-link secondary" href="{{ site.author.cv | relative_url }}">CV</a>
+    </div>
+  </section>
 
-- [Email](mailto:{{ site.author.email }})
-- [GitHub](https://github.com/{{ site.author.github }})
-<!-- - [CV]({{ site.baseurl }}/asserts/cv.pdf) -->
+  <div class="home-grid">
+    <div class="stack">
+      <section class="panel">
+        <h2>About</h2>
+        <p>I am a Ph.D. student at {{ site.author.institution }}, where I work on natural language processing, reasoning, and the evaluation of large language models. My recent interests include multimodal generation, chain-of-thought analysis, and building reliable AI systems that remain useful under real-world constraints.</p>
+        <p>Before joining CUHK, I received my B.Eng. in Electronic Information Science and Technology from Tsinghua University in 2025.</p>
+      </section>
 
-## About
-I am a Ph.D. student at The Chinese University of Hong Kong, working on natural language processing, reasoning, and the evaluation of large language models. I am broadly interested in building reliable and effective AI systems, with recent work spanning multimodal generation, chain-of-thought analysis, and reasoning benchmarks.
+      <section class="panel">
+        <h2>Selected Work</h2>
+        <article class="publication">
+          <h3>From Broad Exploration to Stable Synthesis: Entropy-Guided Optimization for Autoregressive Image Generation</h3>
+          <p class="meta-line">Han Song, Yucheng Zhou, Jianbing Shen, Yu Cheng · ICLR 2026 Poster</p>
+          <p><a href="https://iclr.cc/virtual/2026/poster/10009885">Paper page</a></p>
+        </article>
+      </section>
 
-Before joining CUHK, I received my B.Eng. in Electronic Information Science and Technology from Tsinghua University, where I graduated in 2025.
+      <section class="panel">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Shanghai AI Laboratory</h3>
+            <p class="meta-line">Research Intern · Jul 2024 - Jul 2025</p>
+            <ul class="highlights-list">
+              <li>Worked on inference acceleration for autoregressive video generation.</li>
+              <li>Studied hybrid Mamba-GPT architectures to balance generation quality and efficiency.</li>
+              <li>Explored multi-agent customized video generation with subject consistency modeling.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
 
-## Education
-**The Chinese University of Hong Kong**, Hong Kong SAR  
-Ph.D. in Computer Science and Engineering, Sep 2025 - Present
+    <div class="stack">
+      <section class="panel">
+        <h2>Education</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>The Chinese University of Hong Kong</h3>
+            <p class="meta-line">Ph.D. in Computer Science and Engineering · Sep 2025 - Present</p>
+            <p>{{ site.author.location }}</p>
+          </article>
+          <article class="timeline-item">
+            <h3>Tsinghua University</h3>
+            <p class="meta-line">B.Eng. in Electronic Information Science and Technology · Sep 2020 - Jun 2025</p>
+            <p>Beijing, China · GPA: 3.9/4.0</p>
+          </article>
+        </div>
+      </section>
 
-**Tsinghua University**, Beijing, China  
-B.Eng. in Electronic Information Science and Technology, Sep 2020 - Jun 2025
+      <section class="panel">
+        <h2>Honors and Awards</h2>
+        <ul class="highlights-list">
+          <li>Outstanding Graduate, Tsinghua University (Jun 2025)</li>
+          <li>Comprehensive Excellence Award, Academic Excellence Award, and Science and Technology Innovation Award (2021 - 2024)</li>
+        </ul>
+      </section>
 
-- GPA: 3.9/4.0 
+      <section class="panel">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li>GitHub: <a href="https://github.com/{{ site.author.github }}">@{{ site.author.github }}</a></li>
+          <li>Institution: {{ site.author.institution }}</li>
+        </ul>
+      </section>
 
-## Honors and Awards
-- Outstanding Graduate, Tsinghua University (Jun 2025)
-- Comprehensive Excellence Award, Academic Excellence Award, and Science and Technology Innovation Award (2021-2024)
-
-## Selected Work
-**From Broad Exploration to Stable Synthesis: Entropy-Guided Optimization for Autoregressive Image Generation**  
-Han Song, Yucheng Zhou, Jianbing Shen, Yu Cheng  
-ICLR 2026 Poster  
-[Paper page](https://iclr.cc/virtual/2026/poster/10009885)
-
-## Experience
-**Shanghai AI Laboratory**, Research Intern, Jul 2024 - Jul 2025
-
-- Worked on inference acceleration for autoregressive video generation.
-- Studied hybrid Mamba-GPT architectures to balance generation quality and efficiency.
-- Explored multi-agent customized video generation with subject consistency modeling.
-
-## Contact
-Email: {{ site.author.email | replace: "@", " [at] " }}
+      <section class="panel">
+        <h2>Deployment Note</h2>
+        <p class="footer-note">This site is now configured as a GitHub Pages project site. Publish it from a repository named <strong>songhan</strong> to use the address <strong>https://minebetter.github.io/songhan/</strong>.</p>
+      </section>
+    </div>
+  </div>
+</div>
