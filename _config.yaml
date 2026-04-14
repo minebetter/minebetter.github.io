@@ -5,14 +5,18 @@ url: "https://minebetter.github.io"
 baseurl: ""
 header_pages: []                         # 不在顶部导航重复显示首页
 
-# ---- Author info (供 index.md 使用) ----
-author:
+# ---- Footer author (供 minima 主题使用) ----
+author: Song Han
+
+# ---- Profile info (供 index.md 使用) ----
+profile:
   name: Song Han
   role: Ph.D. Student
   department: Department of Computer Science and Engineering
   institution: The Chinese University of Hong Kong
   location: Hong Kong SAR
   email: hansong@link.cuhk.edu.hk
+  gmail:
   github: minebetter
   interests:
     - NLP

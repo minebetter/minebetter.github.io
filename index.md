@@ -5,19 +5,19 @@ permalink: /
 
 <div class="home">
   <section class="hero">
-    <p class="hero-kicker">{{ site.author.role }} · {{ site.author.department }}</p>
-    <h1>{{ site.author.name }}</h1>
-    <p class="hero-lead">{{ site.author.bio }}</p>
+    <p class="hero-kicker">{{ site.profile.role }} · {{ site.profile.department }}</p>
+    <h1>{{ site.profile.name }}</h1>
+    <p class="hero-lead">{{ site.profile.bio }}</p>
 
     <div class="hero-meta">
-      {% for interest in site.author.interests %}
+      {% for interest in site.profile.interests %}
       <span class="chip">{{ interest }}</span>
       {% endfor %}
     </div>
 
     <div class="hero-links">
-      <a class="button-link" href="mailto:{{ site.author.email }}">Email</a>
-      <a class="button-link secondary" href="https://github.com/{{ site.author.github }}">GitHub</a>
+      <a class="button-link" href="mailto:{{ site.profile.email }}">Email</a>
+      <a class="button-link secondary" href="https://github.com/{{ site.profile.github }}">GitHub</a>
     </div>
   </section>
 
@@ -25,7 +25,7 @@ permalink: /
     <div class="stack">
       <section class="panel">
         <h2>About</h2>
-        <p>I am a Ph.D. student at {{ site.author.institution }}, where I work on natural language processing, reasoning, and the evaluation of large language models. My recent interests include multimodal generation, chain-of-thought analysis, and building reliable AI systems that remain useful under real-world constraints.</p>
+        <p>I am a Ph.D. student at {{ site.profile.institution }}, where I work on natural language processing, reasoning, and the evaluation of large language models. My recent interests include multimodal generation, chain-of-thought analysis, and building reliable AI systems that remain useful under real-world constraints.</p>
         <p>Before joining CUHK, I received my B.Eng. in Electronic Information Science and Technology from Tsinghua University in 2025.</p>
       </section>
 
@@ -61,7 +61,7 @@ permalink: /
           <article class="timeline-item">
             <h3>The Chinese University of Hong Kong</h3>
             <p class="meta-line">Ph.D. in Computer Science and Engineering · Sep 2025 - Present</p>
-            <p>{{ site.author.location }}</p>
+            <p>{{ site.profile.location }}</p>
           </article>
           <article class="timeline-item">
             <h3>Tsinghua University</h3>
@@ -82,9 +82,12 @@ permalink: /
       <section class="panel">
         <h2>Contact</h2>
         <ul class="contact-list">
-          <li>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          <li>GitHub: <a href="https://github.com/{{ site.author.github }}">@{{ site.author.github }}</a></li>
-          <li>Institution: {{ site.author.institution }}</li>
+          <li>Email: <a href="mailto:{{ site.profile.email }}">{{ site.profile.email }}</a></li>
+          {% if site.profile.gmail and site.profile.gmail != "" %}
+          <li>Gmail: <a href="mailto:{{ site.profile.gmail }}">{{ site.profile.gmail }}</a></li>
+          {% endif %}
+          <li>GitHub: <a href="https://github.com/{{ site.profile.github }}">@{{ site.profile.github }}</a></li>
+          <li>Institution: {{ site.profile.institution }}</li>
         </ul>
       </section>
     </div>
