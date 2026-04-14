@@ -18,7 +18,6 @@ permalink: /
     <div class="hero-links">
       <a class="button-link" href="mailto:{{ site.author.email }}">Email</a>
       <a class="button-link secondary" href="https://github.com/{{ site.author.github }}">GitHub</a>
-      <a class="button-link secondary" href="{{ site.author.cv | relative_url }}">CV</a>
     </div>
   </section>
 
@@ -87,11 +86,6 @@ permalink: /
           <li>GitHub: <a href="https://github.com/{{ site.author.github }}">@{{ site.author.github }}</a></li>
           <li>Institution: {{ site.author.institution }}</li>
         </ul>
-      </section>
-
-      <section class="panel">
-        <h2>Deployment Note</h2>
-        <p class="footer-note">This site is now configured as a GitHub Pages project site. Publish it from a repository named <strong>songhan</strong> to use the address <strong>https://minebetter.github.io/songhan/</strong>.</p>
       </section>
     </div>
   </div>

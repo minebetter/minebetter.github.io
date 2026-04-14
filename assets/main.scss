@@ -33,20 +33,7 @@ a {
 }
 
 .site-header {
-  border-top: 0;
-  border-bottom: 1px solid var(--border);
-  background: rgba(251, 250, 246, 0.82);
-  backdrop-filter: blur(14px);
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-
-.site-title,
-.site-title:visited {
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  display: none;
 }
 
 .page-content {
@@ -208,11 +195,6 @@ a {
 .contact-list li + li,
 .highlights-list li + li {
   margin-top: 10px;
-}
-
-.footer-note {
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 @media screen and (max-width: 860px) {

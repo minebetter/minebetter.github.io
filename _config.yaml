@@ -1,8 +1,8 @@
 # ---- Site basics ----
-title: Song Han
+title: ""
 description: Personal homepage
 url: "https://minebetter.github.io"
-baseurl: "/songhan"                    # 项目页地址: https://minebetter.github.io/songhan/
+baseurl: ""
 header_pages: []                         # 不在顶部导航重复显示首页
 
 # ---- Author info (供 index.md 使用) ----
@@ -14,7 +14,6 @@ author:
   location: Hong Kong SAR
   email: hansong@link.cuhk.edu.hk
   github: minebetter
-  cv: /asserts/cv.pdf
   interests:
     - NLP
     - Reasoning
